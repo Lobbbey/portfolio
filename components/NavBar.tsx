@@ -2,34 +2,34 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { FaGithub, FaLinkedin, FaFile } from 'react-icons/fa';
 
 export default function NavBar(){
-    const [prevScrollPos, setPrevScrollPos] = useState(0);
-    const [visible, setVisibile] = useState(0);
 
     return(
-        <>
-            <nav className='Fixed w-full h-10 shadow-xl bg-[#28262C]'>
-                <div className='flex justify-between items-center px-3  text-[#FCF7F8] h-full w-full'>
-                    <Link href="/">Joshua Bandy</Link>
-                    <div>
-                        <ul className='hidden sm:flex'>
-                            <Link href="/">
-                                <li>Home</li>
-                            </Link>
-                            <Link href="/Projects">
-                                <li>Projects</li>
-                            </Link>
-                            <Link href="/Education">
-                                <li>Education</li>
-                            </Link>
-                            <Link href="/Skills">
-                                <li>Skills</li>
-                            </Link>
-                        </ul>
-                    </div>
+        <nav className='Fixed w-full h-10 shadow-xl bg-[#28262C]'>
+            <div className='flex justify-between items-center px-4  text-[#FCF7F8] h-full w-full'>
+                <Link href="/">
+                    <span className='hover:border-b text-xl'>Joshua Bandy</span>
+                </Link>
+                <div>
+                    <ul className='hidden sm:flex items-center space-x-10'>
+                        <Link href="/"><li className='hover:border-b text-lg'>Home</li></Link>
+                        <Link href="/projects"><li className='hover:border-b text-lg'>Projects</li></Link>
+                        <Link href="/experience"><li className='hover:border-b text-lg'>Experience</li></Link>
+                        <Link href="/skills"><li className='hover:border-b text-lg'>Skills</li></Link>
+                        <Link href="/resume.pdf" target='_blank' className='hover:border-b'>
+                            <FaFile className='text-lg' title='Resume'/>
+                        </Link>
+                        <Link href="https://github.com/Lobbbey" target="_blank" className='hover:border-b'>
+                            <FaGithub className='text-lg' title='Github'/>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/joshua-tyler-bandy/" target="_blank" className='hover:border-b'>
+                            <FaLinkedin className='text-lg' title='LinkedIn'/>
+                        </Link>
+                    </ul>
                 </div>
-            </nav>
-        </>
+            </div>
+        </nav>
     );
 }
