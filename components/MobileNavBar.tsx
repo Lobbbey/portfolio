@@ -18,7 +18,7 @@ export default function MobileNavBar(){
 
     return(
         
-        <nav className="fixed w-full h-16 bg-[#28262C] text-[#FCF7F8] shadow-lg z-50">
+        <nav className="fixed w-full h-16 bg-[#1B2021] text-[#FCF7F8] shadow-lg z-50">
             <div className="flex justify-between items-center px-4 h-full">
                 <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
                     {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}

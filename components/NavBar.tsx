@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin, FaFile } from 'react-icons/fa';
 export default function NavBar(){
 
     return(
-        <nav className='Fixed w-full h-10 shadow-xl bg-[#28262C]'>
+        <nav className='Fixed w-full h-10 shadow-xl bg-[#1B2021]'>
             <div className='flex justify-between items-center px-4  text-[#FCF7F8] h-full w-full'>
                 <Link href="/">
                     <span className='hover:border-b text-xl'>Joshua Bandy</span>
