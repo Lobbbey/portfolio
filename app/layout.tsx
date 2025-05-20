@@ -7,19 +7,18 @@ import NavBar from "@/components/NavBar";
 import MobileNavBar from "@/components/MobileNavBar";
 import "./globals.css";
 
-/* export const metadata: Metadata = {
-  title: "Joshua Bandy",
-  description: "Joshua Bandy is an undergraduate Computer Science Student at University of Central Florida",
-  keywords: [
-    "Joshua Bandy",
-    "Software Engineer",
-    "UCF",
-    "University of Central Florida",
-    "Full Stack",
-    "Web Development"
-  ]
-
-}; */
+// export const metadata: Metadata = {
+//   title: "Joshua Bandy",
+//   description: "Joshua Bandy an undergraduate Computer Science Student at University of Central Florida",
+//   keywords: [
+//     "Joshua Bandy",
+//     "Software Engineer",
+//     "UCF",
+//     "University of Central Florida",
+//     "Full Stack",
+//     "Web Development"
+//   ]
+// };
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

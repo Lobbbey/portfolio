@@ -1,8 +1,7 @@
 
-export default function Projects(){
-    return(
-        <>
-            <h1> Projcts</h1>
-        </>
+export default function Projects() {
+ 
+    return (
+        <h1 className="text-3xl"> Projects</h1>
     );
 }
