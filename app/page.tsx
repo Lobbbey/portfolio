@@ -2,21 +2,23 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="flex items-center mt-5 mx-5">
-      
+    <section className="flex flex-col justify-center items-center min-h-screen text-center">
+
+      {/*Graphic Section*/}
+
       {/*Page Title*/}
-      <div className="text-3xl "> 
-        <h1 className="">Welcome, I&apos;m Joshua!</h1>
+      <div className="text-3xl pt-40"> 
+        <h1 className="">Hi I&apos;m Joshua & welcome to my portfolio!</h1>
       </div>
-      
-      {/*About me Paragraph*/}
-      <div className="">
-        <p className="">
-          I am a Software Engineer and first generation undergraduate
-          senior at the{" "}<Link href={"https://ucf.edu/"} target="_blank" className="underline">Univeristy of Central Florida</Link>.<br/>
-          
+
+      {/**/}
+      <div>
+        <p className="text-lg">
+          Checkout some of my {""}<Link href={"/projects"} className="underline hover:"> projects</Link>{""} or 
+          even {""}<Link href={"/aboutme"} className="underline hover:">about me</Link>{""} and what I've done.
         </p>
       </div>
+
 
     </section>
   );

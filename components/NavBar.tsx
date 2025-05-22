@@ -14,10 +14,10 @@ export default function NavBar(){
                 </Link>
                 <div>
                     <ul className='hidden sm:flex items-center space-x-10'>
-                        {/*<Link href="/"><li className='hover:border-b text-lg'>Home</li></Link>*/}
+                        <Link href="/"><li className='hover:border-b text-lg'>Home</li></Link>
+                        <Link href="/aboutme"><li className='hover:border-b text-lg'>About Me</li></Link>
                         <Link href="/projects"><li className='hover:border-b text-lg'>Projects</li></Link>
-                        <Link href="/experience"><li className='hover:border-b text-lg'>Experience</li></Link>
-                        <Link href="/skills"><li className='hover:border-b text-lg'>Skills</li></Link>
+                        {/*<Link href="/skills"><li className='hover:border-b text-lg'>Skills</li></Link>*/}
                         <Link href="/resume.pdf" target='_blank' className='hover:border-b'>
                             <FaFile className='text-lg' title='Resume'/>
                         </Link>
