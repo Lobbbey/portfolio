@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { FaGithub, FaLinkedin, FaFile } from 'react-icons/fa';
+import { FaGithub, FaLinkedin} from 'react-icons/fa';
+import {FaFileLines } from 'react-icons/fa6'
 
 export default function NavBar(){
 
@@ -19,7 +20,7 @@ export default function NavBar(){
                         <Link href="/projects"><li className='hover:border-b text-lg'>Projects</li></Link>
                         {/*<Link href="/skills"><li className='hover:border-b text-lg'>Skills</li></Link>*/}
                         <Link href="/resume.pdf" target='_blank' className='hover:border-b'>
-                            <FaFile className='text-lg' title='Resume'/>
+                            <FaFileLines className='text-lg' title='Resume'/>
                         </Link>
                         <Link href="https://github.com/Lobbbey" target="_blank" className='hover:border-b'>
                             <FaGithub className='text-lg' title='Github'/>

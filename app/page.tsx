@@ -14,8 +14,7 @@ export default function Home() {
       {/**/}
       <div>
         <p className="text-lg">
-          Checkout some of my {""}<Link href={"/projects"} className="underline hover:"> projects</Link>{""} or 
-          even {""}<Link href={"/aboutme"} className="underline hover:">about me</Link>{""} and what I've done.
+          If you want to know  {""}<Link href={"/aboutme"} className="underline hover:">about me</Link>{""} or checkout some of my {""}<Link href={"/projects"} className="underline hover:"> projects</Link>{""}.
         </p>
       </div>
 
