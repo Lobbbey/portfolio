@@ -18,8 +18,8 @@ export default function Experience() {
       <div data-aos="fade-down" className="text-5xl sm:text-4xl text-center">
         <h1>About Me</h1>
         <p className="text-lg md:text-xl lg:text-2xl mx-auto mb-6 max-w-6xl">
-          I'm Joshua Bandy, a first generation computer science student at the
-          University of Central Florida.
+          I'm Joshua Bandy, a first generation university student at the
+          University of Central Florida with a major in computer science.
         </p>
       </div>
 
