@@ -1,18 +1,35 @@
+'use client';
+
 import Link from 'next/link';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Experience() {
+ 
+    useEffect(() =>{
+        AOS.init({
+            duration:1000,
+            once: true,
+        })
+    }, []);
+
     return (
         <section className="my-5  md:p-5" id='about'>
 
             {/*About me*/}
-            <div className="text-5xl sm:text-4xl text-center">
+            <div data-aos="fade-down" className="text-5xl sm:text-4xl text-center">
                 <h1>About Me</h1>
+                <p className='text-lg md:text-xl lg:text-2xl mx-auto mb-6 max-w-6xl'>
+                    I'm Joshua Bandy, a first generation computer science student at the University of Central Florida.
+
+                </p>
             </div>
 
             {/*Skills*/}
 
             {/*See More Links*/}
-            <div className='mt-14 flex flex-col items-center text-center'>
+            <div data-aos="fade-up" className='mt-14 flex flex-col items-center text-center'>
                 <h2 className="text-2xl md:text-3xl text-nowrap mt-8 mb-6">See more here!</h2>
                 <div className="flex gap-16 mt-4 md:mt-8">
                     <Link href="/resume.pdf" target='_blank' className='transition-all duration-300 hover:text-[#eb9c35] '>
