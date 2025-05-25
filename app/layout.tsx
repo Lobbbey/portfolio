@@ -1,20 +1,17 @@
 'use client';
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { IBM_Plex_Mono } from 'next/font/google';
 import { useEffect, useState } from "react";
 import NavBar from "@/components/NavBar";
 import MobileNavBar from "@/components/MobileNavBar";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'], // include weights you use
+  variable: '--font-ibm-plex-mono', // optional for Tailwind
+  display: 'swap',
 });
 
 export default function RootLayout({children,}: Readonly<{  children: React.ReactNode;}>) {
@@ -32,7 +29,7 @@ export default function RootLayout({children,}: Readonly<{  children: React.Reac
   
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${ibmPlexMono.variable} font-mono antialiased`}>
         {isMobile ? <MobileNavBar /> : <NavBar />}
         {children}
       </body>
