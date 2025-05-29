@@ -30,14 +30,31 @@ export default function Experience() {
           className="md:flex-1"
         >
           <h3 className="text-4xl">Skills</h3>
-          <p className="text-lg mt-4 md:text-xl lg:text-2xl max-w-[1000px] text-center mx-auto">
+          <p className="text-lg mt-4 md:text-xl lg:text-2xl max-w-[1000px] text-left">
             I have a deep enjoyment of learning new skills and technologies,
             I've used creating projects as a way to continue this. These are some of the technologies I have learned along the way
-          </p>
-        </div>
+          </p> 
+            
+          {/*Frameworks*/}
+          <div>
+            <h1 className="text-lg md:text-xl lg:text-2xl mt-4 flex flex-col">Frameworks</h1>
 
-        <div data-aos="fade-right">
 
+          </div>
+
+          {/*Languages*/}
+          <div>
+            <h1 className="text-lg md:text-xl lg:text-2xl mt-4 flex flex-col">Languages</h1>
+            
+            <img src="/icons/bash.svg" className="w-12 h-12 transition-all duration-300 hover:scale-110"/>
+          </div>
+ 
+          {/* Tools */}
+          <div>
+            <h1 className="text-lg md:text-xl lg:text-2xl mt-4 flex flex-col">Tools</h1>
+
+            <img src="/icons/nvim.svg" className="w-12 h-12 transition-all duration-300 hover:scale-110"/>
+          </div>
 
         </div>
       </div>
