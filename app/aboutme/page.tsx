@@ -3,6 +3,9 @@ import Link from "next/link";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Tooltip } from "react-tooltip";
+
+//import { Tooltip } from "react-tooltip";
 
 export default function Experience() {
   useEffect(() => {
@@ -11,6 +14,17 @@ export default function Experience() {
       once: true,
     });
   }, []);
+
+  const frameworks = [{ name: "React", icon: "/icons/react.svg" }];
+
+  const languages = [{ name: "Bash", icon: "/icons/bash.svg" }];
+
+  const tools = [
+    {
+      name: "NeoVim",
+      icon: "/icons/nvim.svg",
+    },
+  ];
 
   return (
     <section className="my-5 md:p-5" id="about">
@@ -25,37 +39,99 @@ export default function Experience() {
 
       {/*Skills*/}
       <div className="flex flex-col mt-6 md:flex-row max-w-7xl mx-auto">
-        <div
-          data-aos="fade-left"
-          className="md:flex-1"
-        >
+        <div data-aos="fade-left" className="md:flex-1">
           <h3 className="text-4xl">Skills</h3>
           <p className="text-lg mt-4 md:text-xl lg:text-2xl max-w-[1000px] text-left">
             I have a deep enjoyment of learning new skills and technologies,
-            I've used creating projects as a way to continue this. These are some of the technologies I have learned along the way
-          </p> 
-            
+            I've used creating projects as a way to continue this. These are
+            some of the technologies I have learned along the way
+          </p>
+
           {/*Frameworks*/}
           <div>
-            <h1 className="text-lg md:text-xl lg:text-2xl mt-4 flex flex-col">Frameworks</h1>
+            <h1 className="text-lg md:text-xl lg:text-2xl mt-4 flex flex-col">
+              Frameworks
+            </h1>
 
+            <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+              {frameworks.map(({ name, icon }) => (
+                <img
+                  key={name}
+                  src={icon}
+                  alt={name}
+                  data-tooltip-id={`tooltip-${name}`}
+                  data-tooltip-content={name}
+                  style={{ width: 40, height: 40, cursor: "pointer" }}
+                />
+              ))}
 
+              {frameworks.map(({ name }) => (
+                <Tooltip
+                  key={name}
+                  id={`tooltip-${name}`}
+                  place="bottom"
+                  style={{ backgroundColor: "#1b2021", color: "#ede0d4" }}
+                />
+              ))}
+            </div>
           </div>
 
           {/*Languages*/}
           <div>
-            <h1 className="text-lg md:text-xl lg:text-2xl mt-4 flex flex-col">Languages</h1>
-            
-            <img src="/icons/bash.svg" className="w-12 h-12 transition-all duration-300 hover:scale-110"/>
+            <h1 className="text-lg md:text-xl lg:text-2xl mt-4 flex flex-col">
+              Languages
+            </h1>
+            <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+              {languages.map(({ name, icon }) => (
+                <img
+                  key={name}
+                  src={icon}
+                  alt={name}
+                  data-tooltip-id={`tooltip-${name}`}
+                  data-tooltip-content={name}
+                  style={{ width: 60, height: 60, cursor: "pointer" }}
+                />
+              ))}
+
+              {languages.map(({ name }) => (
+                <Tooltip
+                  key={name}
+                  id={`tooltip-${name}`}
+                  place="bottom"
+                  style={{ backgroundColor: "#1b2021", color: "#ede0d4" }}
+                />
+              ))}
+            </div>
           </div>
- 
+
           {/* Tools */}
           <div>
-            <h1 className="text-lg md:text-xl lg:text-2xl mt-4 flex flex-col">Tools</h1>
+            <h1 className="text-lg md:text-xl lg:text-2xl mt-4 flex flex-col">
+              Tools
+            </h1>
 
-            <img src="/icons/nvim.svg" className="w-12 h-12 transition-all duration-300 hover:scale-110"/>
+            <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+              {tools.map(({ name, icon }) => (
+                <img
+                  key={name}
+                  src={icon}
+                  alt={name}
+                  data-tooltip-id={`tooltip-${name}`}
+                  data-tooltip-content={name}
+                  style={{ width: 40, height: 40, cursor: "pointer" }}
+                />
+              ))}
+
+              {tools.map(({ name }) => (
+                <Tooltip
+                  key={name}
+                  id={`tooltip-${name}`}
+                  place="bottom"
+                  style={{ backgroundColor: "#1b2021", color: "#ede0d4" }}
+                />
+              ))}
+            </div>
           </div>
-
         </div>
       </div>
 
