@@ -19,12 +19,7 @@ export default function Experience() {
 
   const languages = [{ name: "Bash", icon: "/icons/bash.svg" }];
 
-  const tools = [
-    {
-      name: "NeoVim",
-      icon: "/icons/nvim.svg",
-    },
-  ];
+  const tools = [{ name: "NeoVim", icon: "/icons/nvim.svg" }];
 
   return (
     <section className="my-5 md:p-5" id="about">
@@ -61,7 +56,7 @@ export default function Experience() {
                   alt={name}
                   data-tooltip-id={`tooltip-${name}`}
                   data-tooltip-content={name}
-                  style={{ width: 40, height: 40, cursor: "pointer" }}
+                  style={{ width: 55, height: 55, cursor: "pointer" }}
                 />
               ))}
 
@@ -89,7 +84,7 @@ export default function Experience() {
                   alt={name}
                   data-tooltip-id={`tooltip-${name}`}
                   data-tooltip-content={name}
-                  style={{ width: 60, height: 60, cursor: "pointer" }}
+                  style={{ width: 55, height: 55, cursor: "pointer" }}
                 />
               ))}
 
@@ -118,7 +113,7 @@ export default function Experience() {
                   alt={name}
                   data-tooltip-id={`tooltip-${name}`}
                   data-tooltip-content={name}
-                  style={{ width: 40, height: 40, cursor: "pointer" }}
+                  style={{ width: 55, height: 55, cursor: "pointer" }}
                 />
               ))}
 
