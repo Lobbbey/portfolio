@@ -15,11 +15,32 @@ export default function Experience() {
     });
   }, []);
 
-  const frameworks = [{ name: "React", icon: "/icons/react.svg" }];
+  const frameworks = [{ name: "React", icon: "/icons/frameworks/react.svg" },
+                      { name: "Tailwind CSS", icon: "/icons/frameworks/TailwindCSS.svg"},
+                      { name: "Node.js", icon: "/icons/frameworks/Node.js.svg"},
+                      { name: "Flutter", icon: "/icons/frameworks/Flutter.svg"},
+                      { name:"Express", icon:"/icons/frameworks/Express.svg"}];
 
-  const languages = [{ name: "Bash", icon: "/icons/bash.svg" }];
+  const languages = [{ name: "C", icon: "/icons/languages/C.svg"},
+                     { name: "C++", icon: "/icons/languages/C++.svg"},
+                     { name: "Java", icon: "/icons/languages/Java.svg"},
+                     { name: "JavaScript", icon: "/icons/languages/JavaScript.svg"},
+                     { name: "TypeScript", icon: "/icons/languages/TypeScript.svg"},
+                     { name: "HTML", icon: "/icons/languages/HTML.svg"},
+                     { name: "CSS", icon: "/icons/languages/CSS.svg"},
+                     { name: "Python", icon: "/icons/languages/Python.svg"},
+                     { name: "Bash", icon: "/icons/languages/bash.svg" }];
 
-  const tools = [{ name: "NeoVim", icon: "/icons/nvim.svg" }];
+  const tools = [{ name: "Git", icon: "/icons/tools/Git.svg"},
+                 { name: "GitHub", icon: "/icons/github.svg"},
+                 { name: "GitHubActions", icon: "/icons/tools/GitHubActions.svg"},
+                 { name: "Postman", icon: "/icons/tools/Postman.svg"},
+                 { name: "openSUSE", icon: "/icons/tools/openSUSE.svg"},
+                 { name: "Digital Ocean", icon: "/icons/tools/DigitalOcean.svg"},
+                 { name: "MongoDB", icon: "/icons/tools/MongoDB.svg"},
+                 { name: "MySQL", icon: "/icons/tools/MySQL.svg"},
+                 { name: "VSCode", icon: "/icons/tools/VSCode.svg"},
+                 { name: "NeoVim", icon: "/icons/tools/nvim.svg" }];
 
   return (
     <section className="my-5 md:p-5" id="about">
@@ -37,18 +58,16 @@ export default function Experience() {
         <div data-aos="fade-left" className="md:flex-1">
           <h3 className="text-4xl">Skills</h3>
           <p className="text-lg mt-4 md:text-xl lg:text-2xl max-w-[1000px] text-left">
-            I have a deep enjoyment of learning new skills and technologies,
-            I've used creating projects as a way to continue this. These are
-            some of the technologies I have learned along the way
+            After working on many projects, these are the skills that I have acquired throught my learning process.
           </p>
 
           {/*Frameworks*/}
           <div>
-            <h1 className="text-lg md:text-xl lg:text-2xl mt-4 flex flex-col">
+            <h1 className="text-xl md:text-xl lg:text-2xl mt-4 flex flex-col">
               Frameworks
             </h1>
 
-            <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+<div className="grid grid-cols-4 gap-4 sm:flex sm:flex-wrap sm:gap-6 mt-4">
               {frameworks.map(({ name, icon }) => (
                 <img
                   key={name}
@@ -73,10 +92,10 @@ export default function Experience() {
 
           {/*Languages*/}
           <div>
-            <h1 className="text-lg md:text-xl lg:text-2xl mt-4 flex flex-col">
+            <h1 className="text-xl md:text-xl lg:text-2xl mt-4 flex flex-col">
               Languages
             </h1>
-            <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+              <div className="grid grid-cols-4 gap-4 sm:flex sm:flex-wrap sm:gap-6 mt-4">
               {languages.map(({ name, icon }) => (
                 <img
                   key={name}
@@ -101,11 +120,11 @@ export default function Experience() {
 
           {/* Tools */}
           <div>
-            <h1 className="text-lg md:text-xl lg:text-2xl mt-4 flex flex-col">
+            <h1 className="text-xl md:text-xl lg:text-2xl mt-4 flex flex-col">
               Tools
             </h1>
 
-            <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+            <div className="grid grid-cols-4 gap-4 sm:flex sm:flex-wrap sm:gap-6 mt-4">
               {tools.map(({ name, icon }) => (
                 <img
                   key={name}
