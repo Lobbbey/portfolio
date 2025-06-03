@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono } from 'next/font/google';
 import { useEffect, useState } from "react";
 import NavBar from "@/components/NavBar";
-import MobileNavBar from "@/components/MobileNavBar";
 import "./globals.css";
 
 const ibmPlexMono = IBM_Plex_Mono({
@@ -31,7 +30,7 @@ export default function RootLayout({children,}: Readonly<{  children: React.Reac
   return (
     <html lang="en">
       <body className={`${ibmPlexMono.variable} font-mono antialiased`}>
-        {isMobile ? <MobileNavBar /> : <NavBar />}
+        <NavBar/>
         {children}
       </body>
     </html>

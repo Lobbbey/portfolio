@@ -43,7 +43,7 @@ export default function Experience() {
                  { name: "NeoVim", icon: "/icons/tools/nvim.svg" }];
 
   return (
-    <section className="my-5 md:p-5" id="about">
+    <section className="pt-16 my-5 px-4 md:px-5" id="about">
       {/*About me*/}
       <div data-aos="fade-down" className="text-5xl sm:text-4xl text-center">
         <h1>About Me</h1>
@@ -67,7 +67,7 @@ export default function Experience() {
               Frameworks
             </h1>
 
-<div className="grid grid-cols-4 gap-4 sm:flex sm:flex-wrap sm:gap-6 mt-4">
+            <div className="grid grid-cols-4 gap-4 sm:flex sm:flex-wrap sm:gap-4 mt-4">
               {frameworks.map(({ name, icon }) => (
                 <img
                   key={name}
