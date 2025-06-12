@@ -21,6 +21,7 @@ export default function RootLayout({children,}: Readonly<{  children: React.Reac
     <html lang="en">
       <body className={`${ibmPlexMono.variable} font-mono antialiased`}>
         <NavBar/>
+	<Analytics />
         {children}
       </body>
     </html>
