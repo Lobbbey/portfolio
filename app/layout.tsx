@@ -1,6 +1,7 @@
 'use client';
 
 import 'react-tooltip/dist/react-tooltip.css'
+import { Analytics } from "@vercel/analytics/next"
 import type { Metadata } from "next";
 import { IBM_Plex_Mono } from 'next/font/google';
 import { useEffect, useState } from "react";
@@ -22,6 +23,7 @@ export default function RootLayout({children,}: Readonly<{  children: React.Reac
       <body className={`${ibmPlexMono.variable} font-mono antialiased`}>
         <NavBar/>
         {children}
+	<Analytics />
       </body>
     </html>
   );

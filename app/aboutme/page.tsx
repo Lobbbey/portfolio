@@ -48,7 +48,7 @@ export default function Experience() {
       <div data-aos="fade-down" className="text-5xl sm:text-4xl text-center">
         <h1>About Me</h1>
         <p className="text-lg md:text-xl lg:text-2xl mx-auto mb-6 max-w-6xl">
-          I'm Joshua Bandy, a first generation university student at the
+          Hi, my name is Joshua Bandy, a first generation university student at the
           University of Central Florida with a major in computer science.
         </p>
       </div>
@@ -75,7 +75,7 @@ export default function Experience() {
                   alt={name}
                   data-tooltip-id={`tooltip-${name}`}
                   data-tooltip-content={name}
-                  style={{ width: 55, height: 55, cursor: "pointer" }}
+		  className="w-[55px] h-[55px] cursor-pointer transition-all duration-300 hover:scale-120"
                 />
               ))}
 
@@ -103,7 +103,7 @@ export default function Experience() {
                   alt={name}
                   data-tooltip-id={`tooltip-${name}`}
                   data-tooltip-content={name}
-                  style={{ width: 55, height: 55, cursor: "pointer" }}
+		  className="w-[55px] h-[55px] cursor-pointer transition-all duration-300 hover:scale-120"
                 />
               ))}
 
@@ -132,7 +132,7 @@ export default function Experience() {
                   alt={name}
                   data-tooltip-id={`tooltip-${name}`}
                   data-tooltip-content={name}
-                  style={{ width: 55, height: 55, cursor: "pointer" }}
+		  className="w-[55px] h-[55px] cursor-pointer transition-all duration-300 hover:scale-120"
                 />
               ))}
 
