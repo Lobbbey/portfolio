@@ -4,6 +4,7 @@ import 'react-tooltip/dist/react-tooltip.css'
 import type { Metadata } from "next";
 import { IBM_Plex_Mono } from 'next/font/google';
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/next"
 import NavBar from "@/components/NavBar";
 import "./globals.css";
 
