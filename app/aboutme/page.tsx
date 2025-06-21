@@ -15,32 +15,38 @@ export default function Experience() {
     });
   }, []);
 
-  const frameworks = [{ name: "React", icon: "/icons/frameworks/react.svg" },
-                      { name: "Tailwind CSS", icon: "/icons/frameworks/TailwindCSS.svg"},
-                      { name: "Node.js", icon: "/icons/frameworks/Node.js.svg"},
-                      { name: "Flutter", icon: "/icons/frameworks/Flutter.svg"},
-                      { name:"Express", icon:"/icons/frameworks/Express.svg"}];
+  const frameworks = [
+    { name: "React", icon: "/icons/frameworks/react.svg" },
+    { name: "Tailwind CSS", icon: "/icons/frameworks/TailwindCSS.svg" },
+    { name: "Node.js", icon: "/icons/frameworks/Node.js.svg" },
+    { name: "Flutter", icon: "/icons/frameworks/Flutter.svg" },
+    { name: "Express", icon: "/icons/frameworks/Express.svg" },
+  ];
 
-  const languages = [{ name: "C", icon: "/icons/languages/C.svg"},
-                     { name: "C++", icon: "/icons/languages/C++.svg"},
-                     { name: "Java", icon: "/icons/languages/Java.svg"},
-                     { name: "JavaScript", icon: "/icons/languages/JavaScript.svg"},
-                     { name: "TypeScript", icon: "/icons/languages/TypeScript.svg"},
-                     { name: "HTML", icon: "/icons/languages/HTML.svg"},
-                     { name: "CSS", icon: "/icons/languages/CSS.svg"},
-                     { name: "Python", icon: "/icons/languages/Python.svg"},
-                     { name: "Bash", icon: "/icons/languages/bash.svg" }];
+  const languages = [
+    { name: "C", icon: "/icons/languages/C.svg" },
+    { name: "C++", icon: "/icons/languages/C++.svg" },
+    { name: "Java", icon: "/icons/languages/Java.svg" },
+    { name: "JavaScript", icon: "/icons/languages/JavaScript.svg" },
+    { name: "TypeScript", icon: "/icons/languages/TypeScript.svg" },
+    { name: "HTML", icon: "/icons/languages/HTML.svg" },
+    { name: "CSS", icon: "/icons/languages/CSS.svg" },
+    { name: "Python", icon: "/icons/languages/Python.svg" },
+    { name: "Bash", icon: "/icons/languages/bash.svg" },
+  ];
 
-  const tools = [{ name: "Git", icon: "/icons/tools/Git.svg"},
-                 { name: "GitHub", icon: "/icons/github.svg"},
-                 { name: "GitHubActions", icon: "/icons/tools/GitHubActions.svg"},
-                 { name: "Postman", icon: "/icons/tools/Postman.svg"},
-                 { name: "openSUSE", icon: "/icons/tools/openSUSE.svg"},
-                 { name: "Digital Ocean", icon: "/icons/tools/DigitalOcean.svg"},
-                 { name: "MongoDB", icon: "/icons/tools/MongoDB.svg"},
-                 { name: "MySQL", icon: "/icons/tools/MySQL.svg"},
-                 { name: "VSCode", icon: "/icons/tools/VSCode.svg"},
-                 { name: "NeoVim", icon: "/icons/tools/nvim.svg" }];
+  const tools = [
+    { name: "Git", icon: "/icons/tools/Git.svg" },
+    { name: "GitHub", icon: "/icons/github.svg" },
+    { name: "GitHubActions", icon: "/icons/tools/GitHubActions.svg" },
+    { name: "Postman", icon: "/icons/tools/Postman.svg" },
+    { name: "openSUSE", icon: "/icons/tools/openSUSE.svg" },
+    { name: "Digital Ocean", icon: "/icons/tools/DigitalOcean.svg" },
+    { name: "MongoDB", icon: "/icons/tools/MongoDB.svg" },
+    { name: "MySQL", icon: "/icons/tools/MySQL.svg" },
+    { name: "VSCode", icon: "/icons/tools/VSCode.svg" },
+    { name: "NeoVim", icon: "/icons/tools/nvim.svg" },
+  ];
 
   return (
     <section className="pt-16 my-5 px-4 md:px-5" id="about">
@@ -48,8 +54,8 @@ export default function Experience() {
       <div data-aos="fade-down" className="text-5xl sm:text-4xl text-center">
         <h1>About Me</h1>
         <p className="text-lg md:text-xl lg:text-2xl mx-auto mb-6 max-w-6xl">
-          Hi, my name is Joshua Bandy, a first generation university student at the
-          University of Central Florida with a major in computer science.
+          Hi, my name is Joshua Bandy, a first generation university student at
+          the University of Central Florida with a major in computer science.
         </p>
       </div>
 
@@ -58,7 +64,8 @@ export default function Experience() {
         <div data-aos="fade-left" className="md:flex-1">
           <h3 className="text-4xl">Skills</h3>
           <p className="text-lg mt-4 md:text-xl lg:text-2xl max-w-[1000px] text-left">
-            After working on many projects, these are the skills that I have acquired throught my learning process.
+            After working on many projects, these are the skills that I have
+            acquired throught my learning process.
           </p>
 
           {/*Frameworks*/}
@@ -75,7 +82,7 @@ export default function Experience() {
                   alt={name}
                   data-tooltip-id={`tooltip-${name}`}
                   data-tooltip-content={name}
-		  className="w-[55px] h-[55px] cursor-pointer transition-all duration-300 hover:scale-120"
+                  className="w-[55px] h-[55px] cursor-pointer transition-all duration-300 hover:scale-120"
                 />
               ))}
 
@@ -95,7 +102,7 @@ export default function Experience() {
             <h1 className="text-xl md:text-xl lg:text-2xl mt-4 flex flex-col">
               Languages
             </h1>
-              <div className="grid grid-cols-4 gap-4 sm:flex sm:flex-wrap sm:gap-6 mt-4">
+            <div className="grid grid-cols-4 gap-4 sm:flex sm:flex-wrap sm:gap-6 mt-4">
               {languages.map(({ name, icon }) => (
                 <img
                   key={name}
@@ -103,7 +110,7 @@ export default function Experience() {
                   alt={name}
                   data-tooltip-id={`tooltip-${name}`}
                   data-tooltip-content={name}
-		  className="w-[55px] h-[55px] cursor-pointer transition-all duration-300 hover:scale-120"
+                  className="w-[55px] h-[55px] cursor-pointer transition-all duration-300 hover:scale-120"
                 />
               ))}
 
@@ -132,7 +139,7 @@ export default function Experience() {
                   alt={name}
                   data-tooltip-id={`tooltip-${name}`}
                   data-tooltip-content={name}
-		  className="w-[55px] h-[55px] cursor-pointer transition-all duration-300 hover:scale-120"
+                  className="w-[55px] h-[55px] cursor-pointer transition-all duration-300 hover:scale-120"
                 />
               ))}
 
