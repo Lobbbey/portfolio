@@ -33,8 +33,9 @@ export default function Projects() {
       name: "CampusConnect",
       duration: "January 2023 - April 2024",
       info: {
-        description: "",
-        tags: [],
+        description: "Allows students to join university clubs and see what events are going on.",
+        tags: [
+				],
       },
       logo: "",
       link: "https://github.com/Lobbbey/CampusConnect",
@@ -43,7 +44,7 @@ export default function Projects() {
       name: "Contacter",
       duration: "Jan 2023 - Feb 2023",
       info: {
-        description: "A webapp made with a LAMP stack to manage ",
+        description: "Helps users manage their contacts by allowing searching, editing, and adding of that data.",
         tags: ["Linux", "Apache", "MySql", "PHP"],
       },
       logo: "",
@@ -61,6 +62,39 @@ export default function Projects() {
         <h1>Projects</h1>
         <p className="text-lg md:text-xl lg:text-2xl mx-auto mb-6 max-w-6xl"></p>
       </div>
+      <div className="">
+
+					{ projects.map((project, index) => (
+    <div key={index} className="mb-8 p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
+      <h2 className="text-3xl font-bold text-gray-800">{project.name}</h2>
+      <p className="text-gray-600 text-sm mb-2">{project.duration}</p>
+      {project.info.description && (
+        <p className="text-gray-700 mt-4">{project.info.description}</p>
+      )}
+      {project.info.tags.length > 0 && (
+        <div className="mt-4 flex flex-wrap gap-2">
+          {project.info.tags.map((tag, tagIndex) => (
+            <span key={tagIndex} className="bg-blue-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+      {project.link && (
+        <div className="mt-4">
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            View Project
+          </a>
+        </div>
+      )}
+    </div>
+  ))}
+     </div>
     </section>
   );
 }
