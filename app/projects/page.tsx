@@ -19,7 +19,7 @@ export default function Projects() {
       info: {
         description:
           "A way to assist with managing a large collection of physical media such as Movies, Music, Books, and Video Games",
-        tags: ["Next.js"],
+        tags: ["Next.js", "Tailwind CSS", "PostgresSQL", "Supabase"],
       },
       logo: "",
       link: "https://github.com/Lobbbey/MediaShelf",
