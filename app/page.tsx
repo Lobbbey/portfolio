@@ -25,7 +25,7 @@ export default function Home() {
       {/*Send too's*/}
       <div data-aos="fade-up" className="text-2xl">
         <p>
-          If you want to know {""}<Link href={"/aboutme"} className="hover:underline duration-300 transition-all text-[#eb9c35] hover:animate-pulse">about me</Link>{" "}
+          Want to know {""}<Link href={"/aboutme"} className="hover:underline duration-300 transition-all text-[#eb9c35] hover:animate-pulse">about me</Link>{" "}
           or checkout some of my previous {""}<Link href={"/projects"} className="hover:underline text-[#eb9c35] hover:animate-pulse"> projects</Link>{""}.
         </p>
       </div>
