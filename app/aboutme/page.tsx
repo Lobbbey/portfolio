@@ -40,7 +40,7 @@ export default function aboutme() {
     { name: "GitHub", icon: "/icons/github.svg" },
     { name: "GitHubActions", icon: "/icons/tools/GitHubActions.svg" },
     { name: "Postman", icon: "/icons/tools/Postman.svg" },
-    { name: "openSUSE", icon: "/icons/tools/openSUSE.svg" },
+    { name: "Linux", icon: "/icons/tools/Linux.svg" },
     { name: "Digital Ocean", icon: "/icons/tools/DigitalOcean.svg" },
     { name: "MongoDB", icon: "/icons/tools/MongoDB.svg" },
     { name: "MySQL", icon: "/icons/tools/MySQL.svg" },
@@ -156,7 +156,8 @@ export default function aboutme() {
       </div>
 
 	{/* More than Code*/}
-	<div data-aos="fade-up" className="">
+	<div data-aos="fade-up" className="mt-16 flex flex-col items-center text-center">
+		<h2 className="text-2xl md:text-3xl whitespace-nowrap mt-8 mb-6"> More than just code.</h2>
 	</div>
 
       {/*See More Links*/}
