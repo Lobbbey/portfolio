@@ -7,7 +7,7 @@ import { Tooltip } from "react-tooltip";
 
 //import { Tooltip } from "react-tooltip";
 
-export default function Experience() {
+export default function aboutme() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -51,28 +51,27 @@ export default function Experience() {
   return (
     <section className="pt-16 my-5 px-4 md:px-5" id="about">
       {/*About me*/}
-      <div data-aos="fade-down" className="text-5xl sm:text-4xl text-center">
+      <div data-aos="fade-up" className="text-5xl sm:text-4xl text-center">
         <h1>About Me</h1>
         <p className="text-lg md:text-xl lg:text-2xl mx-auto mb-6 max-w-6xl">
-          Hi, my name is Joshua Bandy, a first generation university student at
-          the University of Central Florida with a major in computer science.
+          Hi, my name is Joshua Bandy. I am a first generation university student at
+          the University of Central Florida, majoring in computer science.
         </p>
       </div>
 
       {/*Skills*/}
-      <div className="flex flex-col mt-6 md:flex-row max-w-7xl mx-auto">
-        <div data-aos="fade-left" className="md:flex-1">
-          <h3 className="text-4xl">Skills</h3>
+      <div className="flex flex-col mt-12 md:flex-row max-w-7xl mx-auto">
+        <div data-aos="fade-up" className="md:flex-1">
+          <h2 className="text-4xl">Skills</h2>
           <p className="text-lg mt-4 md:text-xl lg:text-2xl max-w-[1000px] text-left">
-            After working on many projects, these are the skills that I have
-            acquired throught my learning process.
+		Through working on various projects, I have acquired the following skills:
           </p>
 
           {/*Frameworks*/}
-          <div>
-            <h1 className="text-xl md:text-xl lg:text-2xl mt-4 flex flex-col">
+          <div className="mt-8">
+            <h3 className="text-xl md:text-xl lg:text-2xl mt-4 flex flex-col">
               Frameworks
-            </h1>
+            </h3>
 
             <div className="grid grid-cols-4 gap-4 sm:flex sm:flex-wrap sm:gap-4 mt-4">
               {frameworks.map(({ name, icon }) => (
@@ -98,7 +97,7 @@ export default function Experience() {
           </div>
 
           {/*Languages*/}
-          <div>
+          <div className="mt-8">
             <h1 className="text-xl md:text-xl lg:text-2xl mt-4 flex flex-col">
               Languages
             </h1>
@@ -126,7 +125,7 @@ export default function Experience() {
           </div>
 
           {/* Tools */}
-          <div>
+          <div className="mt-8">
             <h1 className="text-xl md:text-xl lg:text-2xl mt-4 flex flex-col">
               Tools
             </h1>
@@ -156,13 +155,17 @@ export default function Experience() {
         </div>
       </div>
 
+	{/* More than Code*/}
+	<div data-aos="fade-up" className="">
+	</div>
+
       {/*See More Links*/}
       <div
         data-aos="fade-up"
-        className="mt-14 flex flex-col items-center text-center"
+        className="mt-16 flex flex-col items-center text-center"
       >
         <h2 className="text-2xl md:text-3xl text-nowrap mt-8 mb-6">
-          See more here!
+          Find me elsewhere!
         </h2>
         <div className="flex gap-16 mt-4 md:mt-8">
           <Link

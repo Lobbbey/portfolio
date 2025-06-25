@@ -17,8 +17,7 @@ export default function Projects() {
       name: "MediaShelf",
       duration: "July 2025 - Current",
       info: {
-        description:
-          "A way to assist with managing a large collection of physical media such as Movies, Music, Books, and Video Games",
+        description: "A tool to help manage a large collection of physical media such as movies, music, books, and video games.",
         tags: ["Next.js", "Tailwind CSS", "PostgresSQL", "Supabase"],
       },
       logo: "",
@@ -28,8 +27,7 @@ export default function Projects() {
       name: "Live Cap",
       duration: "ImmerseGTXR 2025 Hackathon",
       info: {
-        description:
-          "Augmented Reality app that will live translate what a person said and display the translation as a speech bubble by their head.",
+        description: "An Augmented Reality app that live translates speech and displays the translation as a speech bubble overlay anove the speaker's head.",
         tags: ["Flutter", "Unity", "FastAPI", "Cloud Translation API"],
       },
       logo: "",
@@ -39,8 +37,7 @@ export default function Projects() {
       name: "Project Salvage",
       duration: "February 2024 - May 2024",
       info: {
-        description:
-          "This app helps people with managing their finances by displaying spending graphs and making savings goals.",
+        description: "This app assists users with financial mangement by displaying spending graphs and enabling savings goals.",
         tags: [
           "MongoDB",
           "Express",
@@ -57,8 +54,7 @@ export default function Projects() {
       name: "CampusConnect",
       duration: "January 2023 - April 2024",
       info: {
-        description:
-          "Allows students to join university clubs and see what events are going on.",
+        description: "Allows university students to join clubs and discover ongoing events.",
         tags: [
           "Linux",
           "Apache",
@@ -75,8 +71,7 @@ export default function Projects() {
       name: "Contacter",
       duration: "Jan 2023 - Feb 2023",
       info: {
-        description:
-          "Helps users manage their contacts by allowing searching, editing, and adding of that data.",
+        description: "Facilitates contact management by enabling users to search, edit, and add contact information.",
         tags: ["Linux", "Apache", "MySql", "PHP"],
       },
       logo: "",
@@ -85,15 +80,20 @@ export default function Projects() {
   ];
 
   return (
-    <section className="pt-16 my-5 px-4 md:px-5" id="about">
+    <section className="pt-16 my-5 px-4 md:px-5" id="projects">
+	{/* Title */}
       <div
         data-aos="fade-up"
-        className="text-5xl sm:text-4xl text-left f1B2021ex-col mx-auto"
+        className="text-5xl sm:text-4xl text-left flex-col mx-auto"
       >
         <h1>Projects</h1>
-        <p className="text-lg md:text-xl lg:text-2xl mx-auto mb-6 max-w-6xl"></p>
+        <p className="text-lg md:text-xl lg:text-2xl mt-1 mx-auto mb-6 ">
+	Below is a list of projects that I've worked on and showcase the skills I've used.
+	</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+	{/* List of projects  */}
+	<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
         {projects.map((project, index) => (
           <div
             key={index}

@@ -19,16 +19,16 @@ export default function Home() {
 
       {/*Page Title*/}
       <div data-aos="fade-up" className="text-6xl sm:text-5xl pt-40">
-        <h1 className="">Hi I&apos;m Joshua & welcome to my portfolio!</h1>
+        <h1 className="">Hi I&apos;m Joshua, and welcome to my portfolio!</h1>
       </div>
 
       {/*Send too's*/}
-      <div data-aos="fade-up" className="text-2xl">
-        <p>
-          Want to know {""}<Link href={"/aboutme"} className="hover:underline duration-300 transition-all text-[#eb9c35] hover:animate-pulse">about me</Link>{" "}
-          or checkout some of my previous {""}<Link href={"/projects"} className="hover:underline text-[#eb9c35] hover:animate-pulse"> projects</Link>{""}.
-        </p>
-      </div>
-    </section>
+	<div data-aos="fade-up" className="text-2xl mt-4">
+	  <p>
+	    Learn more <Link href="/aboutme" className="hover:underline duration-300 transition-all text-[#eb9c35] hover:animate-pulse">about me</Link>{" "}
+	    or view my <Link href="/projects" className="hover:underline text-[#eb9c35] hover:animate-pulse">past projects</Link>.
+	  </p>
+	</div>
+   </section>
   );
 }
