@@ -14,6 +14,16 @@ export default function Projects() {
 
   const projects = [
     {
+      name: "RE-RASSOR",
+      duration: "May 2025 - Current",
+      info: {
+        description: "A computer architecture upgrade was implemented to enable wireless communication between the rover and its ARM module.",
+        tags: ["ROS2", "Flask", "Arduino", "Ubuntu", "Python", "JavaScript", ],
+      },
+      logo: "",
+      link: "https://github.com/FlaSpaceInst/2025-Summer-Knights-RASSOR",
+    },
+    {
       name: "MediaShelf",
       duration: "July 2025 - Current",
       info: {
