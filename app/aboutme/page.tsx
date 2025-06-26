@@ -157,7 +157,7 @@ export default function aboutme() {
 
 	{/* More than Code*/}
 	<div data-aos="fade-up" className="mt-16 flex flex-col items-center text-center">
-		<h2 className="text-2xl md:text-3xl whitespace-nowrap mt-8 mb-6"> More than just code.</h2>
+		<h2 className="text-2xl md:text-3xl whitespace-nowrap mt-8 mb-6"></h2>
 	</div>
 
       {/*See More Links*/}
