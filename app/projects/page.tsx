@@ -14,6 +14,16 @@ export default function Projects() {
 
   const projects = [
     {
+      name: "Tracer",
+      duration: "GemiKnights Hackathon",
+      info: {
+        description: "Tracer is a desktop application built with Pygame that serves as a dynamic code visualization and tracing tool.",
+        tags: ["Python", "Pygame", "Google Gemini API",],
+      },
+      logo: "",
+      link: "https://github.com/Adammouedden/Tracer",
+    },
+    {
       name: "RE-RASSOR",
       duration: "May 2025 - Current",
       info: {
