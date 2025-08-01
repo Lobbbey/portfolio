@@ -1,4 +1,3 @@
-
 export const frameworks = [
     { name: "React", icon: "/icons/frameworks/react.svg" },
     { name: "Next.js", icon: "/icons/frameworks/Next.js.svg"},
