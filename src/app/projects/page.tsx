@@ -2,8 +2,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import LinkIconSVG from "../../public/icons/link.svg";
-import { projects } from '@/constants/projects';
+import { projects } from "@/constants/projects";
 
 export default function Projects() {
   useEffect(() => {
@@ -15,18 +14,17 @@ export default function Projects() {
 
   return (
     <section className="pt-16 my-5 px-4 md:px-5" id="projects">
-	{/* Title */}
-      <div
-        className="text-5xl sm:text-4xl text-left flex-col mx-auto"
-      >
+      {/* Title */}
+      <div className="text-5xl sm:text-4xl text-left flex-col mx-auto">
         <h1>Projects</h1>
         <p className="text-lg md:text-xl lg:text-2xl mt-1 mx-auto mb-6 ">
-	Below is a list of projects that I've worked on and showcase the skills I've used.
-	</p>
+          Below is a list of projects that I've worked on and showcase the
+          skills I've used.
+        </p>
       </div>
 
-	{/* List of projects  */}
-	<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+      {/* List of projects  */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
         {projects.map((project, index) => (
           <div
             key={index}

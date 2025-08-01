@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Tooltip } from "react-tooltip";
-import {frameworks, languages, databases, tools } from "@/constants/skills"
+import { frameworks, languages, databases, tools } from "@/constants/skills";
 
 export default function aboutme() {
   useEffect(() => {
@@ -20,8 +20,9 @@ export default function aboutme() {
       <div data-aos="fade-up" className="text-5xl sm:text-4xl text-center">
         <h1>About Me</h1>
         <p className="text-lg md:text-xl lg:text-2xl mx-auto mb-6 max-w-6xl">
-          Hi, my name is Joshua Bandy. I am a first generation university student at
-          the University of Central Florida, majoring in computer science.
+          Hi, my name is Joshua Bandy. I am a first generation university
+          student at the University of Central Florida, majoring in computer
+          science.
         </p>
       </div>
 
@@ -30,7 +31,8 @@ export default function aboutme() {
         <div data-aos="fade-up" className="md:flex-1">
           <h2 className="text-4xl">Skills</h2>
           <p className="text-lg mt-4 md:text-xl lg:text-2xl max-w-[1000px] text-left">
-		Through working on various projects, I have acquired the following skills:
+            Through working on various projects, I have acquired the following
+            skills:
           </p>
 
           {/*Frameworks*/}
@@ -149,10 +151,13 @@ export default function aboutme() {
         </div>
       </div>
 
-	{/* More than Code*/}
-	<div data-aos="fade-up" className="mt-16 flex flex-col items-center text-center">
-		<h2 className="text-2xl md:text-3xl whitespace-nowrap mt-8 mb-6"></h2>
-	</div>
+      {/* More than Code*/}
+      <div
+        data-aos="fade-up"
+        className="mt-16 flex flex-col items-center text-center"
+      >
+        <h2 className="text-2xl md:text-3xl whitespace-nowrap mt-8 mb-6"></h2>
+      </div>
 
       {/*See More Links*/}
       <div
