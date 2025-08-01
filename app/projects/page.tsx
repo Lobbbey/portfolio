@@ -38,7 +38,7 @@ export default function Projects() {
       duration: "July 2025 - Current",
       info: {
         description: "A tool to help manage a large collection of physical media such as movies, music, books, and video games.",
-        tags: ["Next.js", "Tailwind CSS", "PostgresSQL", "Supabase"],
+        tags: ["Next.js", "React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB",],
       },
       logo: "",
       link: "https://github.com/Lobbbey/MediaShelf",

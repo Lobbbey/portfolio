@@ -17,10 +17,14 @@ export default function aboutme() {
 
   const frameworks = [
     { name: "React", icon: "/icons/frameworks/react.svg" },
-    { name: "Tailwind CSS", icon: "/icons/frameworks/TailwindCSS.svg" },
+    { name: "Next.js", icon: "/icons/frameworks/Next.js.svg"},
     { name: "Node.js", icon: "/icons/frameworks/Node.js.svg" },
+    { name: "Tailwind CSS", icon: "/icons/frameworks/TailwindCSS.svg" },
     { name: "Flutter", icon: "/icons/frameworks/Flutter.svg" },
     { name: "Express", icon: "/icons/frameworks/Express.svg" },
+    { name: "Mongoose", icon: "/icons/frameworks/Mongoose.js.svg"},
+    { name: "ROS2", icon: "/icons/frameworks/ROS2.svg"},
+    { name: "Flask", icon: "/icons/frameworks/Flask.svg"}
   ];
 
   const languages = [
@@ -35,15 +39,19 @@ export default function aboutme() {
     { name: "Bash", icon: "/icons/languages/bash.svg" },
   ];
 
+  const databases = [
+    { name: "MongoDB", icon: "/icons/tools/MongoDB.svg" },
+    { name: "MySQL", icon: "/icons/tools/MySQL.svg" },
+  ];
+
   const tools = [
     { name: "Git", icon: "/icons/tools/Git.svg" },
     { name: "GitHub", icon: "/icons/github.svg" },
-    { name: "GitHubActions", icon: "/icons/tools/GitHubActions.svg" },
+    { name: "GitHub Actions", icon: "/icons/tools/GitHubActions.svg" },
     { name: "Postman", icon: "/icons/tools/Postman.svg" },
+    { name: "Raspberry Pi", icon: "/icons/tools/RaspberryPi.svg"},
     { name: "Linux", icon: "/icons/tools/Linux.svg" },
     { name: "Digital Ocean", icon: "/icons/tools/DigitalOcean.svg" },
-    { name: "MongoDB", icon: "/icons/tools/MongoDB.svg" },
-    { name: "MySQL", icon: "/icons/tools/MySQL.svg" },
     { name: "VSCode", icon: "/icons/tools/VSCode.svg" },
     { name: "NeoVim", icon: "/icons/tools/nvim.svg" },
   ];
@@ -114,6 +122,34 @@ export default function aboutme() {
               ))}
 
               {languages.map(({ name }) => (
+                <Tooltip
+                  key={name}
+                  id={`tooltip-${name}`}
+                  place="bottom"
+                  style={{ backgroundColor: "#1b2021", color: "#ede0d4" }}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/*Databases*/}
+          <div className="mt-8">
+            <h1 className="text-xl md:text-xl lg:text-2xl mt-4 flex flex-col">
+              Databases
+            </h1>
+            <div className="grid grid-cols-4 gap-4 sm:flex sm:flex-wrap sm:gap-6 mt-4">
+              {databases.map(({ name, icon }) => (
+                <img
+                  key={name}
+                  src={icon}
+                  alt={name}
+                  data-tooltip-id={`tooltip-${name}`}
+                  data-tooltip-content={name}
+                  className="w-[55px] h-[55px] cursor-pointer transition-all duration-300 hover:scale-120"
+                />
+              ))}
+
+              {databases.map(({ name }) => (
                 <Tooltip
                   key={name}
                   id={`tooltip-${name}`}
