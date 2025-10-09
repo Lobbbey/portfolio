@@ -1,4 +1,5 @@
 export const frameworks = [
+    { name: "Angular", icon: "/icons/frameworks/Angular.svg"},
     { name: "React", icon: "/icons/frameworks/react.svg" },
     { name: "Next.js", icon: "/icons/frameworks/Next.js.svg"},
     { name: "Node.js", icon: "/icons/frameworks/Node.js.svg" },
@@ -13,6 +14,7 @@ export const frameworks = [
 export const languages = [
     { name: "C", icon: "/icons/languages/C.svg" },
     { name: "C++", icon: "/icons/languages/C++.svg" },
+    { name: "C#", icon: "/icons/languages/CSharp.svg" },
     { name: "Java", icon: "/icons/languages/Java.svg" },
     { name: "JavaScript", icon: "/icons/languages/JavaScript.svg" },
     { name: "TypeScript", icon: "/icons/languages/TypeScript.svg" },
@@ -35,6 +37,8 @@ export const tools = [
     { name: "Raspberry Pi", icon: "/icons/tools/RaspberryPi.svg"},
     { name: "Linux", icon: "/icons/tools/Linux.svg" },
     { name: "Digital Ocean", icon: "/icons/tools/DigitalOcean.svg" },
+    { name: "Docker", icon: "/icons/tools/Docker.svg" },
     { name: "VSCode", icon: "/icons/tools/VSCode.svg" },
+    { name: "Android Studio", icon: "/icons/tools/AndroidStudio.svg" },
     { name: "NeoVim", icon: "/icons/tools/nvim.svg" },
   ];

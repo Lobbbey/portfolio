@@ -1,86 +1,128 @@
+import { Description } from "@radix-ui/react-dialog";
+
 export const projects = [
-    {
-      name: "Tracer",
-      duration: "GemiKnights Hackathon",
-      info: {
-        description: "Tracer is a desktop application built with Pygame that serves as a dynamic code visualization and tracing tool.",
-        tags: ["Python", "Pygame", "Google Gemini API",],
-      },
-      logo: "",
-      link: "https://github.com/Adammouedden/Tracer",
+  {
+    name: "Space Pirate 64",
+    duration: "September 2025 - Current",
+    info:{
+      description: "A game inspired by Star Fox 64 with rouge like elements mixed in.",
+      tags: ["Unity", "C#"],
     },
-    {
-      name: "RE-RASSOR",
-      duration: "May 2025 - Current",
-      info: {
-        description: "A computer architecture upgrade was implemented to enable wireless communication between the rover and its ARM module.",
-        tags: ["ROS2", "Flask", "Arduino", "Ubuntu", "Python", "JavaScript", ],
-      },
-      logo: "",
-      link: "https://github.com/FlaSpaceInst/2025-Summer-Knights-RASSOR",
+    logo: "",
+    link: "https://github.com/daniel-davenport/SpacePirate64",
+  },
+  {
+    name: "All Aspects Billing",
+    duration: "September 2025 - Current",
+    info: {
+      description:
+        "Developed a fully responsive corporate website for a medical billing company. The project was built with Next.js and styled with Tailwind CSS.",
+      tags: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+      ],
     },
-    {
-      name: "MediaShelf",
-      duration: "July 2025 - Current",
-      info: {
-        description: "A tool to help manage a large collection of physical media such as movies, music, books, and video games.",
-        tags: ["Next.js", "React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB",],
-      },
-      logo: "",
-      link: "https://github.com/Lobbbey/MediaShelf",
+    logo: "",
+    link: "https://allaspectsbilling.com/",
+  },
+  {
+    name: "Tracer",
+    duration: "GemiKnights Hackathon",
+    info: {
+      description:
+        "Tracer is a desktop application built with Pygame that serves as a dynamic code visualization and tracing tool.",
+      tags: ["Python", "Pygame", "Google Gemini API"],
     },
-    {
-      name: "Live Cap",
-      duration: "ImmerseGTXR 2025 Hackathon",
-      info: {
-        description: "An Augmented Reality app that live translates speech and displays the translation as a speech bubble overlay anove the speaker's head.",
-        tags: ["Flutter", "Unity", "FastAPI", "Cloud Translation API"],
-      },
-      logo: "",
-      link: "https://github.com/Lobbbey/LiveCap",
+    logo: "",
+    link: "https://github.com/Adammouedden/Tracer",
+  },
+  {
+    name: "RE-RASSOR",
+    duration: "May 2025 - Current",
+    info: {
+      description:
+        "A computer architecture upgrade was implemented to enable wireless communication between the rover and its ARM module.",
+      tags: ["ROS2", "Flask", "Arduino", "Ubuntu", "Python", "JavaScript"],
     },
-    {
-      name: "Project Salvage",
-      duration: "February 2024 - May 2024",
-      info: {
-        description: "This app assists users with financial mangement by displaying spending graphs and enabling savings goals.",
-        tags: [
-          "MongoDB",
-          "Express",
-          "React",
-          "Node.js",
-          "TailwindCSS",
-          "Flutter",
-        ],
-      },
-      logo: "",
-      link: "https://github.com/Lobbbey/ProjectSalvage",
+    logo: "",
+    link: "https://github.com/FlaSpaceInst/2025-Summer-Knights-RASSOR",
+  },
+  {
+    name: "MediaShelf",
+    duration: "July 2025 - Current",
+    info: {
+      description:
+        "A tool to help manage a large collection of physical media such as movies, music, books, and video games.",
+      tags: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+      ],
     },
-    {
-      name: "CampusConnect",
-      duration: "January 2023 - April 2024",
-      info: {
-        description: "Allows university students to join clubs and discover ongoing events.",
-        tags: [
-          "Linux",
-          "Apache",
-          "MySQL",
-          "PHP",
-          "Tailwind CSS",
-          "Github Actions",
-        ],
-      },
-      logo: "",
-      link: "https://github.com/Lobbbey/CampusConnect",
+    logo: "",
+    link: "https://github.com/Lobbbey/MediaShelf",
+  },
+  {
+    name: "Live Cap",
+    duration: "ImmerseGTXR 2025 Hackathon",
+    info: {
+      description:
+        "An Augmented Reality app that live translates speech and displays the translation as a speech bubble overlay anove the speaker's head.",
+      tags: ["Flutter", "Unity", "FastAPI", "Cloud Translation API"],
     },
-    {
-      name: "Contacter",
-      duration: "Jan 2023 - Feb 2023",
-      info: {
-        description: "Facilitates contact management by enabling users to search, edit, and add contact information.",
-        tags: ["Linux", "Apache", "MySql", "PHP"],
-      },
-      logo: "",
-      link: "https://github.com/Lobbbey/Contacter",
+    logo: "",
+    link: "https://github.com/Lobbbey/LiveCap",
+  },
+  {
+    name: "Project Salvage",
+    duration: "February 2024 - May 2024",
+    info: {
+      description:
+        "This app assists users with financial mangement by displaying spending graphs and enabling savings goals.",
+      tags: [
+        "MongoDB",
+        "Express",
+        "React",
+        "Node.js",
+        "TailwindCSS",
+        "Flutter",
+      ],
     },
-  ];
+    logo: "",
+    link: "https://github.com/Lobbbey/ProjectSalvage",
+  },
+  {
+    name: "CampusConnect",
+    duration: "January 2023 - April 2024",
+    info: {
+      description:
+        "Allows university students to join clubs and discover ongoing events.",
+      tags: [
+        "Linux",
+        "Apache",
+        "MySQL",
+        "PHP",
+        "Tailwind CSS",
+        "Github Actions",
+      ],
+    },
+    logo: "",
+    link: "https://github.com/Lobbbey/CampusConnect",
+  },
+  {
+    name: "Contacter",
+    duration: "Jan 2023 - Feb 2023",
+    info: {
+      description:
+        "Facilitates contact management by enabling users to search, edit, and add contact information.",
+      tags: ["Linux", "Apache", "MySql", "PHP"],
+    },
+    logo: "",
+    link: "https://github.com/Lobbbey/Contacter",
+  },
+];

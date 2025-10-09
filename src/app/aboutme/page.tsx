@@ -16,13 +16,13 @@ export default function aboutme() {
 
   return (
     <section className="pt-16 my-5 px-4 md:px-5" id="about">
-      {/*About me*/}
+      {/*Background*/}
       <div data-aos="fade-up" className="text-5xl sm:text-4xl text-center">
         <h1>About Me</h1>
         <p className="text-lg md:text-xl lg:text-2xl mx-auto mb-6 max-w-6xl">
           Hi, my name is Joshua Bandy. I am a first generation university
           student at the University of Central Florida, majoring in computer
-          science.
+          science with a focus on full stack development.
         </p>
       </div>
 
@@ -151,12 +151,56 @@ export default function aboutme() {
         </div>
       </div>
 
-      {/* More than Code*/}
+      {/* Hackathon */}
       <div
         data-aos="fade-up"
         className="mt-16 flex flex-col items-center text-center"
       >
-        <h2 className="text-2xl md:text-3xl whitespace-nowrap mt-8 mb-6"></h2>
+        <h2 className="text-2xl md:text-3xl whitespace-nowrap mt-8 mb-6">
+          {/* Hackathon Experience! */}
+        </h2>
+      </div>
+
+      {/* More than Code*/}
+      <div className="flex flex-col mt-12 md:flex-row max-w-7xl mx-auto">
+        <div data-aos="fade-up" className="md:flex-1">
+          <h2 className="text-4xl">More Than Just Code</h2>
+          <p className="text-lg mt-4 md:text-xl lg:text-2xl max-w-[1000px] text-left">
+            Other than coding I'm a huge Cinephile. I enjoy watching film and
+            discussing the different techniques used to make them. I currently
+            track the films I've seen using{" "}
+            <Link
+              href="https://boxd.it/gOW59"
+              className="hover:underline text-[#eb9c35] hover:animate-pulse"
+            >
+              Letterboxd
+            </Link>
+            .
+          </p>
+          <p className="text-lg mt-4 md:text-xl lg:text-2xl max-w-[1000px] text-left">
+            I'm also a Melophile, I enjoy listening to various albums from a
+            wide range of music genres and catalog my raitngs on{" "}
+            <Link
+              href="https://rateyourmusic.com/~Lobbbey"
+              className="hover:underline text-[#eb9c35] hover:animate-pulse"
+            >
+              RateYourMusic
+            </Link>
+            .
+          </p>
+          <p className="text-lg mt-4 md:text-xl lg:text-2xl max-w-[1000px] text-left">
+            I also like to find physical media, primarily films and CDs, which
+            is what sparked my desire to create{" "}
+            <Link
+              href="https://github.com/Lobbbey/MediaShelf"
+              className="hover:underline text-[#eb9c35] hover:animate-pulse"
+            >
+              MediaShelf
+            </Link>
+            {" "}to assist in tracking what users currently own and help track what a
+            user is looking for with a wishlist. 
+          </p>
+        </div>
       </div>
 
       {/*See More Links*/}
