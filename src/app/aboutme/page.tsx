@@ -186,7 +186,8 @@ export default function aboutme() {
             >
               RateYourMusic
             </Link>
-            .
+            . You can always find me listening to new music as I go throughout
+            my day.
           </p>
           <p className="text-lg mt-4 md:text-xl lg:text-2xl max-w-[1000px] text-left">
             I also like to find physical media, primarily films and CDs, which
@@ -196,9 +197,9 @@ export default function aboutme() {
               className="hover:underline text-[#eb9c35] hover:animate-pulse"
             >
               MediaShelf
-            </Link>
-            {" "}to assist in tracking what users currently own and help track what a
-            user is looking for with a wishlist. 
+            </Link>{" "}
+            to assist in tracking what users currently own and help track what a
+            user is looking for with a wishlist.
           </p>
         </div>
       </div>

@@ -79,7 +79,7 @@ export const projects = [
     link: "https://github.com/Lobbbey/LiveCap",
   },
   {
-    name: "Project Salvage",
+    name: "Salvage Financial",
     duration: "February 2024 - May 2024",
     info: {
       description:
